@@ -10,13 +10,16 @@
     <!-- Fuente del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title>Mi Portafolio</title>
+    <script src="https://kit.fontawesome.com/1e2541cc15.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Menú -->
     <header class="cabecera">
-        <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
-        <h1 class="cabecera__titulo">Alura Latam</h1>
+        <div class="cabecera__titulo-contenedor">
+            <img class="cabecera__logo" src="assets/vector.png" alt="Logo">
+            <h1 class="cabecera__titulo">Fabian Medina</h1>
+        </div>
         <nav class="navegacion">
             <ul class="navegacion__lista">
                 <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
@@ -28,29 +31,44 @@
             </ul>
         </nav>
     </header>
+    
 
     <!-- Sección de Presentación -->
     <section class="presentacion">
-        <img class="presentacion__foto" src="assets/profile.png" alt="Foto de perfil">
+        <img class="presentacion__foto" src="assets/fotoLinkedln.jpg" alt="Foto de perfil">
         <div class="presentacion__contenedor">
-            <h2 class="presentacion__titulo">Hola, mi nombre es Alura Latam y construyo páginas web</h2>
-            <p class="presentacion__subtitulo">Soy formada en... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
+            <h2 class="presentacion__titulo">Hola, mi nombre es Fabian Medina y construyo páginas web</h2>
+            <p class="presentacion__subtitulo">Soy un desarrollador web full stack junior, formado en Digital House a través de la Fundación Formar. Actualmente, me especializo en Front-End en el proyecto Oracle ONE con Alura Latam, donde sigo fortaleciendo mis habilidades y conocimientos en el desarrollo web y programación.</p>
             <ul class="redes">
-                <li class="redes__img"><a href="">Github <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
-                <li class="redes__img"><a href="">Currículo <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a target="_blank" href="https://github.com/FabianMedina28">
+                    <i class="fa-brands fa-github" style="color: #ffffff;"></i>
+                    Github <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a target="_blank" href="https://www.linkedin.com/in/fabian-medina-982a51247/">
+                    <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+                    Linkedin <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a target="_blank" href="https://www.instagram.com/fabian_watford/">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    Instagram <img src="assets/arrow.png" alt="Flecha"></a></li>
+                <li class="redes__img"><a target="_blank" href="https://drive.google.com/file/d/1iSxyudOLEPT8RTdFjb08wu6haKyoHN7m/view?usp=drive_link">
+                    <i class="fa-solid fa-file" style="color: #ffffff;"></i>
+                    Currículum <img src="assets/arrow.png" alt="Flecha"></a></li>
             </ul>
         </div>
     </section>
 
     <!-- Sección sobre mí -->
     <section class="sobre-mi" id="sobre-mi">
-        <h2 class="sobre-mi__titulo">Sobre mí</h2>
-        <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
-        <p class="sobre-mi__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
-        <!-- Firma opcional -->
-        <img class="sobre-mi__firma" src="assets/signature.png" alt="Firma">
+        <div class="carta" id="carta">
+            <div class="carta__cara carta__cara--frontal">
+                <h2>Sobre mí</h2>
+                <p>¡Hola! Soy un apasionado del desarrollo web y un aprendiz constante en el fascinante mundo de la tecnología. Completé un curso de Programación Web Full Stack en Digital House, donde adquirí habilidades fundamentales, gracias a una beca de Educación Formar. Actualmente, estoy especializándome en front-end a través de un curso de Oracle en Alura Latam.</p>
+                <button class="boton" id="btnGirar"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+            <div class="carta__cara carta__cara--trasera">
+                <p>Me encanta enfrentar desafíos y disfrutar resolviendo problemas complejos. Busco colaborar con equipos que fomenten el crecimiento personal y profesional. Estoy ansioso por conectar con otros profesionales del sector y continuar perfeccionando mis habilidades en programación. ¡Listo para asumir nuevos retos!</p>
+                <button class="boton" id="btnGirar2"><i class="fa-solid fa-caret-left"></i></button>
+            </div>
+        </div>
     </section>
 
     <!-- Sección de Habilidades -->
@@ -58,28 +76,44 @@
         <h2 class="habilidades__titulo">Habilidades</h2>
         <ul class="habilidades__lista">
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/html.png" alt="HTML">
+                <i class="fa-brands fa-html5" style="color: #ff6600;"></i>
                 <p class="habilidades__nombre">HTML 5</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/js_icon.png" alt="JavaScript">
+                <i class="fa-brands fa-js" style="color: #ffc800;"></i>
                 <p class="habilidades__nombre">JavaScript</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/php_icon.png" alt="PHP">
-                <p class="habilidades__nombre">PHP</p>
+                <i class="fa-solid fa-database" style="color: #ffffff;"></i>
+                <p class="habilidades__nombre">MySQL</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/nodejs_icon.png" alt="Node.js">
+                <i class="fa-brands fa-node" style="color: #004d05;"></i>
                 <p class="habilidades__nombre">Node.js</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/react_icon.png" alt="React">
+                <i class="fa-brands fa-react" style="color: #74C0FC;"></i>
                 <p class="habilidades__nombre">React</p>
             </li>
             <li class="habilidades__elemento">
-                <img class="habilidades__icono" src="assets/css_icon.png" alt="CSS">
+                <i class="fa-brands fa-css3-alt" style="color: #005eff;"></i>
                 <p class="habilidades__nombre">CSS</p>
+            </li>
+            <li class="habilidades__elemento">
+                <i class="fa-brands fa-slack" style="color: #ff0000;"></i>
+                <p class="habilidades__nombre">Slack</p>
+            </li>
+            <li class="habilidades__elemento">
+                <i class="fa-brands fa-bootstrap" style="color: #8c00ff;"></i>
+                <p class="habilidades__nombre">Boopstrat</p>
+            </li>
+            <li class="habilidades__elemento">
+                <i class="fa-brands fa-figma" style="color: #ff6600;"></i>
+                <p class="habilidades__nombre">Figma</p>
+            </li>
+            <li class="habilidades__elemento">
+                <i class="fa-brands fa-vuejs" style="color: #00ff4c;"></i>
+                <p class="habilidades__nombre">Vue.js</p>
             </li>
         </ul>
     </section>
@@ -89,55 +123,44 @@
         <h2 class="aficiones__titulo">Aficiones</h2>
         <ul class="aficiones__lista">
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/skate_icon.png" alt="Patinaje">
-                <p class="aficiones__nombre">Patinaje</p>
+                <i class="fa-solid fa-computer" style="color: #4caf50;"></i>
+                <p class="aficiones__nombre">Videojuegos</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/guitar_icon.png" alt="Tocar bajo">
-                <p class="aficiones__nombre">Tocar bajo</p>
+                <i class="fa-solid fa-headphones" style="color: #4caf50;"></i>
+                <p class="aficiones__nombre">Escuchar Música</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/headphones_icon.png" alt="Oír música">
-                <p class="aficiones__nombre">Oír música</p>
+                <i class="fa-solid fa-tv" style="color: #4caf50;"></i>
+                <p class="aficiones__nombre">Ver Series</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/tv_icon.png" alt="Ver series">
-                <p class="aficiones__nombre">Ver series</p>
+                <i class="fa-solid fa-plane" style="color: #4caf50;"></i>
+                <p class="aficiones__nombre">Viajar</p>
             </li>
             <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/forkspoon_icon.png" alt="Cocinar">
+                <i class="fa-solid fa-kitchen-set" style="color: #4caf50;"></i>
                 <p class="aficiones__nombre">Cocinar</p>
-            </li>
-            <li class="aficiones__elemento">
-                <img class="aficiones__icono" src="assets/camera_icon.png" alt="Tomar fotos">
-                <p class="aficiones__nombre">Tomar fotos</p>
             </li>
         </ul>
     </section>
 
     <!-- Sección de Formación académica -->
     <section class="formacion" id="formacion">
-        <h2 class="formacion__titulo">Formación académica</h2>
+        <h2 class="formacion__titulo">Cursos y Certificaciones</h2>
         <ul class="formacion__lista">
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufpr_logo.png" alt="UFPR">
+                <img class="formacion__icono" src="assets/digital-house.png" alt="DigitalHouse">
                 <div>
-                    <h3 class="formacion__nombre">Análisis de datos</h3>
-                    <p class="formacion__detalle">2018 - UFPR</p>
+                    <h3 class="formacion__nombre">Beca de Desarrollador Web full stack Jr</h3>
+                    <p class="formacion__detalle">07/2023-04/2024</p>
                 </div>
             </li>
             <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/alura_logo.png" alt="Alura">
+                <img class="formacion__icono" src="assets/alura_2.png" alt="Alura">
                 <div>
-                    <h3 class="formacion__nombre">Formación en UX Design</h3>
-                    <p class="formacion__detalle">2019 - Alura</p>
-                </div>
-            </li>
-            <li class="formacion__elemento">
-                <img class="formacion__icono" src="assets/ufrj_logo.png" alt="UFRJ">
-                <div>
-                    <h3 class="formacion__nombre">Posgrado en diseño</h3>
-                    <p class="formacion__detalle">En curso - UFRJ</p>
+                    <h3 class="formacion__nombre">Especialización con inteligencia artificial en front-end con Oracle ONE y Alura Latam </h3>
+                    <p class="formacion__detalle">05/2024-Actualmente</p>
                 </div>
             </li>
         </ul>
@@ -147,12 +170,27 @@
     <section class="proyectos" id="proyectos">
         <h2 class="proyectos__titulo">Experiencia Profesional</h2>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="proyectos__nombre">Alura Play</h3>
+            <p class="proyectos__descripcion">Creamos una página en la cual podíamos navegar sobre los distintos videos de Alura</p>
+            
+            <!-- Imagen de vista previa -->
+            <img class="proyectos__imagen" src="assets/aluraPlay.png" alt="Vista previa de Alura Play" />
+            <!-- Botones de enlace -->
+            <div class="proyectos__botones">
+                <a href="https://alura-play-one-lac.vercel.app/" target="_blank" class="boton-proyecto">Ver Demo</a>
+                <a href="https://github.com/FabianMedina28/AluraPlay" target="_blank" class="boton-proyecto">Repositorio</a>
+            </div>
         </div>
         <div class="proyectos__contenedor">
-            <h3 class="proyectos__nombre">Título de la Experiencia</h3>
-            <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+            <h3 class="proyectos__nombre">Encriptador de texto</h3>
+            <p class="proyectos__descripcion">Creamos un encriptador de texto que tambien tiene la función de desencriptar</p>
+            <!-- Imagen de vista previa -->
+            <img class="proyectos__imagen" src="assets/encriptador.png" alt="Vista previa de encriptador" />
+            <!-- Botones de enlace -->
+            <div class="proyectos__botones">
+                <a href="https://challenge-encriptador-azure.vercel.app/" target="_blank" class="boton-proyecto">Ver Demo</a>
+                <a href="https://github.com/FabianMedina28/challenge-encriptador" target="_blank" class="boton-proyecto">Repositorio</a>
+            </div>
         </div>
     </section>
 
